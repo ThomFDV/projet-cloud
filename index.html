@@ -18,17 +18,15 @@
             </div>
         </div>
         <script>
-            const url = 'https://jsonplaceholder.typicode.com/users';
             var app = new Vue({
                 el: '#app',
                 data: {
                     title: 'Users Informations',
+                    url: 'https://jsonplaceholder.typicode.com/users',
                     users: []
                 },
                 mounted() {
-                    axios.get('https://jsonplaceholder.typicode.com/users').then(response => {
-                        this.users = response.data;
-                    });
+                    axios.get(this.url).then(res => this.users = res.data);
                 }
             });
         </script>
