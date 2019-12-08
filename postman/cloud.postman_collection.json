@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "7ed89963-7b70-42f4-bd0f-8e12e443f6c6",
+		"name": "cloud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "http://localhost:3000/user/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/user/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lastname\": \"Allirol\",\n    \"firstname\" : \"Elise\",\n    \"email\": \"allirol.elise@gmail.com\",\n    \"pwd\": \"test\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/user/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\t\n\t\"id\": 1,\n\t\"updates\": {\n\t    \"Nom\": \"Boilleau\",\n\t    \"Prenom\" : \"Romain\",\n\t    \"Email\": \"romain.boilleau@gmail.com\",\n\t    \"Mdp\": \"test\",\n\t    \"Telephone\": \"0631127552\",\n\t    \"Adresse\": \"1 place Michel Ange\",\n\t    \"Ville\": \"Chatou\",\n\t    \"CodePostale\": 78400\n\t}\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/user/",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\t\n\t\"id\": 1,\n\t\"updates\": {\n\t    \"lastname\": \"Allirol\",\n\t    \"firstname\" : \"Elise\",\n\t    \"email\": \"elise.allirol@gmail.com\",\n\t    \"pwd\": \"test\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/user/1",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\t\n\t\"id\": 1,\n\t\"updates\": {\n\t    \"Nom\": \"Boilleauu\",\n\t    \"Prenom\" : \"Romain\",\n\t    \"Email\": \"romain.boilleau@gmail.com\",\n\t    \"Mdp\": \"test\",\n\t    \"Telephone\": \"0631127552\",\n\t    \"Adresse\": \"1 place Michel Ange\",\n\t    \"Ville\": \"Chatou\",\n\t    \"CodePostale\": 78400\n\t}\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
